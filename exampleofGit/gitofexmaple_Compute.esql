@@ -5,6 +5,8 @@ CREATE COMPUTE MODULE gitofexmaple_Compute
 	BEGIN
 		CALL CopyMessageHeaders();
 		 CALL CopyEntireMessage();
+		 
+		 SET OutputRoot.XMLNSC.Data='123';
 		RETURN TRUE;
 	END;
 
